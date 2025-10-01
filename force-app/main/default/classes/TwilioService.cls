@@ -3,10 +3,11 @@
  * Handles sending and retrieving SMS messages via Twilio API
  */
 public with sharing class TwilioService {
+    TwilioAuthToken__mdt taToken = TwilioAuthToken__mdt.getInstance('First');
     // Constants for Twilio API
-    private static final String ACCOUNT_SID = ''; // TODO: Add your Twilio Account SID
-    private static final String AUTH_TOKEN = ''; // TODO: Add your Twilio Auth Token
-    private static final String DEFAULT_FROM_NUMBER = ''; // TODO: Add your default sender number
+    private static final String ACCOUNT_SID = taToken.Account_SID__c; // TODO: Add your Twilio Account SID
+    private static final String AUTH_TOKEN = taToken.Token__c; // TODO: Add your Twilio Auth Token
+    private static final String DEFAULT_FROM_NUMBER = '+18312228123'; // TODO: Add your default sender number
     private static final String TWILIO_API_URL = 'https://api.twilio.com/2010-04-01/Accounts/' + ACCOUNT_SID;
 
 
