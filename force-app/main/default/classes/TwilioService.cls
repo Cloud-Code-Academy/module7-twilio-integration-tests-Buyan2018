@@ -4,9 +4,9 @@
  */
 public with sharing class TwilioService {
     // Constants for Twilio API
-    private static final String ACCOUNT_SID = ''; // TODO: Add your Twilio Account SID
-    private static final String AUTH_TOKEN = ''; // TODO: Add your Twilio Auth Token
-    private static final String DEFAULT_FROM_NUMBER = ''; // TODO: Add your default sender number
+    private static final String ACCOUNT_SID = 'ACc7dc268459a4de737183caee7109bb7f'; // TODO: Add your Twilio Account SID
+    private static final String AUTH_TOKEN = '6ff2fc3ff932a6c3061fc56e934509c3'; // TODO: Add your Twilio Auth Token
+    private static final String DEFAULT_FROM_NUMBER = '+18312228123'; // TODO: Add your default sender number
     private static final String TWILIO_API_URL = 'https://api.twilio.com/2010-04-01/Accounts/' + ACCOUNT_SID;
 
 
